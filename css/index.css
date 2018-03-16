@@ -3,11 +3,9 @@
 	--color-lightGrey:#cfd5d3;
 	--color-black:#000000;
 	--color-white:#FFFFFF;
-	--color-red:#ef3c39;
 	--color-mainPrimary:0,128,128;
 	--color-mainSecondary:172,172,172;
 }
-
 
 @keyframes fadeInLeft {
   from {
@@ -122,6 +120,10 @@ body {
 	animation: fadeIn 1s ease 2s forwards;
 }
 
+.contentSection__header {
+	text-align: center;
+}
+
 .contentProject {
 	width: 90%;
 	display: flex;
@@ -171,4 +173,56 @@ body {
 	padding: 3px;
 	font-size: 1.3rem;
 	flex:1;
+}
+
+.contentTechnology {
+	height: 100vh;
+	width: 90%;
+	padding: 1rem 0;
+}
+
+.cardtech {
+	position: relative;
+	height: 54rem;
+	width: 32rem;
+	margin-bottom: 3rem;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-between;
+ 	perspective: 150rem;
+}
+
+.cardtech__side--front {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .8s ease;
+	background-color: orange;
+	height: 45rem;
+	width: 32rem;
+	backface-visibility: hidden;
+}
+
+.cardtech__side--back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .8s ease;
+	background-color: green;
+	height: 45rem;
+	width: 32rem;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+.cardtech:hover  .cardtech__side--front {
+	transform: rotateY(180deg);
+}
+
+.cardtech:hover  .cardtech__side--back {
+	transform: rotateY(0deg);
+}
+
+.cardtech__item {
+	
 }
