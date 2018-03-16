@@ -1,5 +1,5 @@
-@import url("./variables/_variables.css");
-@import url("./animations/_animations.css");
+@import url("_variables.css");
+@import url("_animations.css");
 
  *,
 *::after,
