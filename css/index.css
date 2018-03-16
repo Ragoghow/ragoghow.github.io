@@ -1,4 +1,13 @@
-@import url("_variables.css");
+:root {
+	--color-darkGrey:#818a91;
+	--color-lightGrey:#cfd5d3;
+	--color-black:#000000;
+	--color-white:#FFFFFF;
+	--color-red:#ef3c39;
+	--color-mainPrimary:0,128,128;
+	--color-mainSecondary:172,172,172;
+}
+
 @import url("_animations.css");
 
  *,
