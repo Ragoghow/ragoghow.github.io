@@ -1,3 +1,3 @@
 # ragoghow.github.io
 
-Under construction - allways
+Under construction - always
